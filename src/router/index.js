@@ -7,7 +7,6 @@ const _resolve=(page)=>(resolve)=>require([`../pages${page}`],resolve)
 const index=resolve=>require(["../pages/index/index.vue"],resolve)
 const search=resolve=>require(["../pages/search/search.vue"],resolve)
 const detail=resolve=>require(["../pages/detail/detail.vue"],resolve)
-const remote=resolve=>require(["../pages/remote/remote.vue"],resolve)
 // 路由实例
 let router=new Router({
   routes:[

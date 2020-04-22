@@ -2,9 +2,11 @@
 
 使用Vue搭建的移动端H5行情，完成基本的行情查看，行情详情，行情自选股等功能。
 
+注：本项目只做为本人练习使用，涉及到的三方接口只作学习，特此说明。
+
 ## 预览效果
 
-> http://www.281016.cn/hq/
+> http://120.27.24.71/hq/#/
 
 <img src="http://120.27.24.71/hq/demos/01.png" width="250" height="450"> <img src="http://120.27.24.71/hq/demos/02.png" width="250" height="450"> <img src="http://120.27.24.71/hq/demos/03.png" width="250" height="450"> <img src="http://120.27.24.71/hq/demos/04.png" width="250" height="450">
 
