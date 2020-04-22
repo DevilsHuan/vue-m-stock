@@ -4,7 +4,7 @@
 
 ## 预览效果
 
-> http://www.281016.cn/hq/
+> http://120.27.24.71/hq
 
 <img src="http://120.27.24.71/hq/demos/01.png" width="250" height="450"> <img src="http://120.27.24.71/hq/demos/02.png" width="250" height="450"> <img src="http://120.27.24.71/hq/demos/03.png" width="250" height="450"> <img src="http://120.27.24.71/hq/demos/04.png" width="250" height="450">
 
