@@ -1,0 +1,25 @@
+@mixin background($image){
+    background:transparent url($image) no-repeat center;
+    background-size:100%;
+}
+@mixin center-all(){
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+// 主题系统
+@mixin themes(){
+    @each $name,$theme in $themes{
+        [data-theme='#{$name}'] & {
+            background:map-get($map:$theme,$key:background);
+            color:map-get($map:$theme,$key:text);
+            & section{
+                background:map-get($map:$theme,$key:background-section);
+            }
+            & input{
+                background:map-get($map:$theme,$key:background-section);
+                color:map-get($map:$theme,$key:text);
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import './reset.scss';
+@import './icon.scss';
+@import './animation.scss';
+@import './mixin.scss';
+// 页面公用
+#app{
+    position: relative;
+}
+.page{
+    position: fixed;
+    top:0px;bottom:0px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    max-width:100%;
+    font-size:$size;
+    @include themes();
+    section{
+        padding:10px 20px;
+        margin-top:20px;
+        &:first-child{
+            margin-top:0px;
+        }
+        &--margin-clear{
+            margin-top:0px;
+        }
+    }
+    li{
+        margin:5px 0px;
+    }
+    @each $key,$item in $sizes {
+        .size--#{$key}{
+            font-size:$item;
+        }
+    }
+    .number{
+        .change{
+            color:$text-up;
+        }
+        &--down{
+            .change{
+                color:$text-down;
+            }
+        }
+    }
+    .center{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+}

@@ -1,0 +1,12 @@
+.slide{
+    &-enter-active,
+    &-leave-active{
+        transition:0.3s all;
+    }
+    &-enter{
+        transform: translate3d(100%,0,0);
+    }
+    &-leave-to{
+        transform: translate3d(-100%,0,0);
+    }
+}

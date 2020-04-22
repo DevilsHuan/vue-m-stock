@@ -1,0 +1,48 @@
+@import './variable.scss';
+$blocks:10;
+$pace-color:#ffffff;
+
+@mixin root-font-size(){
+    width:100%;
+    font-size:100vw/$blocks;
+    body{
+        width:100%;
+        margin:0px auto;
+        padding:0px;
+        min-width:$min-width;
+        max-width:100vw;
+    }
+    @media screen and (max-width:$min-width){
+        font-size:$min-width/$blocks;
+    }
+    @media screen and (min-width: $max-width) {
+        font-size:75px;
+    }
+}
+html{
+  @include root-font-size();
+  font-family:DINPro-Medium,PingFangSC-Regular,Helvetica,Arial,sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input{
+  font-family:DINPro-Medium,PingFangSC-Regular,Helvetica,Arial,sans-serif;
+}
+body{
+  font-size:$size;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+ul{
+  list-style: none;
+  margin:0px;
+  padding:0px;
+  li{
+    margin:0px;
+    padding:0px;
+  }
+}
